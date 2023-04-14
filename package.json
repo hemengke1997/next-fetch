@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "packageManager": "pnpm@7.30.0",
-  "description": "a template for typescript project or plugin",
+  "description": "fetch for nextjs",
   "author": "hemengke <https://github.com/hemengke1997>",
   "license": "MIT",
   "repository": {
