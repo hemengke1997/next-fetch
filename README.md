@@ -1,6 +1,20 @@
-# ts-template
+# next-fetchx
 
-> a template for typescript project or plugin
+## Usage
 
-- branch `master` => single repo template
-- branch `monorepo` => monorepo template
+```ts
+import { NextFetchx } from 'next-fetchx'
+
+const nextFetchx = new NextFetchx(
+  {
+    credentials: 'include',
+    requestOptions: {
+      apiUrl: 'http://localhost:3000/api',
+    },
+  },
+)
+
+const fetchx = nextFetchx.fetch.bind(nextFetchx)
+
+export { fetchx }
+```
