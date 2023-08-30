@@ -331,7 +331,14 @@ export class NextFetchx {
         }
       }
     } catch (_err) {
-      let error = _err
+      let error = {
+				error: _err,
+				externalErrorInfo: {
+					url,
+					options
+				}
+			}
+
       for (const interceptor of internalErrorInterceptors) {
         error = interceptor(error) || error
       }
